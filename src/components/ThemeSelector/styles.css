@@ -1,0 +1,33 @@
+.ThemeSelector {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ThemeSelector__Item {
+	max-width: 180px;
+	margin-top: 16px;
+	animation-duration: 5s;
+	animation-name: slide;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.ThemeSelector__Item:hover {
+	animation-play-state: paused;
+}
+
+.ThemeSelector__Item:first-child {
+	margin-top: 0;
+}
+
+@keyframes slide {
+	from {
+		transform: translate(calc(100vw - 85vw));
+	}
+
+	to {
+		transform: translate(70vw);
+	}
+}

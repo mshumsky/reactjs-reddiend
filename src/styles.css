@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	margin: 0;
+}
+
+h1,
+h3 {
+	font-family: "PT Sans", sans-serif;
+	margin: 0;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+p,
+button {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-shadow: 0 0 1px rgb(255, 255, 255);
+}
+
+a:active {
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 2px rgb(0, 0, 0);
+	transition-duration: 300ms;
+}
+
+.App {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+}
+
+.App__Posts {
+	margin-top: 32px;
+}

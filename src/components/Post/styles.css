@@ -1,0 +1,41 @@
+.Post {
+	max-height: 80px;
+	padding: 15px 15px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Post:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Post__Title {
+	height: 26px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.Post__Controls {
+	display: flex;
+	margin-top: 4px;
+}
+
+.Post__Like,
+.Post__Delete {
+	cursor: pointer;
+}
+
+.Post__Like {
+	color: lightcyan;
+	margin-right: 8px;
+}
+
+.Post__Like--Active {
+	color: red;
+}
+
+.Post__Delete {
+	color: orangered;
+}

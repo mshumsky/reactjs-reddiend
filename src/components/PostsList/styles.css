@@ -1,0 +1,38 @@
+.PostsList {
+	width: 100%;
+	height: calc(100vh - 224px - 32px - 16px - 32px);
+}
+
+.PostsList__Item {
+	width: 100%;
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.PostsList__Item::-webkit-scrollbar-track {
+	display: none;
+}
+
+.PostsList__Item::-webkit-scrollbar {
+	width: 10px;
+	background: transparent;
+}
+
+.PostsList__Item::-webkit-scrollbar-thumb {
+	background-color: #aaa;
+	border-radius: 10px;
+	background-image: -webkit-linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.2) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(0, 0, 0, 0.2) 50%,
+		rgba(0, 0, 0, 0.2) 75%,
+		transparent 75%,
+		transparent
+	);
+}
+
+.PostsList__Autosizer {
+	width: 100% !important;
+}
